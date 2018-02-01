@@ -66,19 +66,19 @@ bot.on('message', function(message)
            .setFooter("Under development... Email: galbence2002@gmail.com")
            .setThumbnail(message.author.displayAvatarURL);
            message.author.send({embed});
-           message.author.send("Join our chat: https://discord.gg/MqQEnRu");
+           message.author.send("Join our chat: https://discord.gg/DBgruE4");
            break;
 
-        case "staff":
+        case "devs":
             var embed = new Discord.RichEmbed()
-            .addField("Staff Team:", "\n | Main Owner: ECC9 \n | Co-Owners: -none- \n | Administrators: -none- \n | Head Moderators: GNSPHIL \n | Moderators: ATZ1 , kevzter15 , JTG24 \n | Trial Moderators: <none> \n \n `Owner email: galbence2002@gmail.com`")
+            .addField("Developer Team:", "ECC9 , Gaiben , Ipz , Anarchy ")
             .setColor(0xFC142B)
             .setThumbnail(message.author.displayAvatarURL);
             message.channel.sendEmbed(embed);
             break;
 
         case "invite":
-            message.channel.send("Your Invitation Link: ```https://discord.gg/MqQEnRu``` ");
+            message.channel.send("Your Invitation Link: ```https://discord.gg/DBgruE4``` ");
             break;
 
         case "afk":
