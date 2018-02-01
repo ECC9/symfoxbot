@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const PREFIX  = ";;";
-const Commando = require('discord.js-commando');
 const path = require('path');
 
 
@@ -29,6 +28,21 @@ bot.on('message', function(message)
 
     switch (args[0].toLowerCase())
     {
+      case "kick":
+        var member = message.mentions.members.first();
+        var reason = message.content.substring(PREFIX.length + args[0].length + 1 + args[1].length);
+
+        if(message.member.hasPermission("KICK_MEMBERS"))
+        {
+          member.kick(reason);
+          message.channel.send(member + " has been kicked because" + reason);
+        }
+        else
+        {
+          message.reply("You don't have the permission to kick " + member);
+        }
+        break;
+
         case "ping":
             message.channel.send('Pinging...').then(sent => {
             sent.edit(`Pong! Took ${sent.createdTimestamp - message.createdTimestamp}ms`);
@@ -66,19 +80,19 @@ bot.on('message', function(message)
            .setFooter("Under development... Email: galbence2002@gmail.com")
            .setThumbnail(message.author.displayAvatarURL);
            message.author.send({embed});
-           message.author.send("Join our chat: https://discord.gg/DBgruE4");
+           message.author.send("Join our chat: https://discord.gg/MqQEnRu");
            break;
 
-        case "devs":
+        case "staff":
             var embed = new Discord.RichEmbed()
-            .addField("Developer Team:", "ECC9 , Gaiben , Ipz , Anarchy ")
+            .addField("Staff Team:", "\n | Main Owner: ECC9 \n | Co-Owners: -none- \n | Administrators: -none- \n | Head Moderators: GNSPHIL \n | Moderators: ATZ1 , kevzter15 , JTG24 \n | Trial Moderators: <none> \n \n `Owner email: galbence2002@gmail.com`")
             .setColor(0xFC142B)
             .setThumbnail(message.author.displayAvatarURL);
             message.channel.sendEmbed(embed);
             break;
 
         case "invite":
-            message.channel.send("Your Invitation Link: ```https://discord.gg/DBgruE4``` ");
+            message.channel.send("Your Invitation Link: ```https://discord.gg/MqQEnRu``` ");
             break;
 
         case "afk":
