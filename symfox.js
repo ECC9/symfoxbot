@@ -29,13 +29,29 @@ bot.on('message', function(message)
     switch (args[0].toLowerCase())
     {
       case "kick":
+        if(!(args[1] && args[2])) return;
+
         var member = message.mentions.members.first();
         var reason = message.content.substring(PREFIX.length + args[0].length + 1 + args[1].length);
 
         if(message.member.hasPermission("KICK_MEMBERS"))
         {
-          member.kick(reason);
-          message.channel.send(member + " has been kicked because" + reason);
+          if(message.guild.me.hasPermission("KICK_MEMBERS"))
+          {
+            if(member !== undefined)
+            {
+              member.kick(reason);
+              message.channel.send(member + " has been kicked because" + reason);
+            }
+            else
+            {
+              message.channel.send("The provided person to kick isn't valid");
+            }
+          }
+          else
+          {
+            message.channel.send("I don't have enough permission to kick someone, ask the guild's owner if you think this isn't normal");
+          }
         }
         else
         {
