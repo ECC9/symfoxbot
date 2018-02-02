@@ -79,7 +79,9 @@ bot.on('message', function(message)
         break;
 
       case "test":
-        message.channel.send("Test is OK.");
+        message.channel.send('Testing...').then(sent => {
+        sent.edit(`Test is OK. ${sent.createdTimestamp - message.createdTimestamp}ms`);
+        });
         break;
 
       case "rekt":
