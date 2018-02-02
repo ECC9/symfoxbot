@@ -222,6 +222,10 @@ bot.on('message', function(message)
         message.channel.send("In case if you forgot the link, I :mailbox: you the link. Check you'r DM!");
         message.author.send("Invitation link: https://discordapp.com/oauth2/authorize?client_id=353117726824464394&scope=bot&permissions=2146959615");
         break;
+            
+      case "kremsajt": 
+        message.channel.send("KRÉMSAJT, olyan finom ez a KRÉMSAJT", {files: [{attachment: 'http://vacsinalam.cafeblog.hu/files/2014/06/cserpes-natur-kremsajt.jpg' }]} );
+        break;    
 
       default:
         message.channel.send("Invalid command! Please type `;;help` for the commands list!");
