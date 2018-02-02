@@ -6,7 +6,7 @@ const path = require('path');
 
 bot.on("ready", function()
 {
-    console.log("SymverseBot v1.0.0 Beta is running!");
+    console.log("SymfoxBot is running!");
     bot.user.setStatus("online");
     bot.user.setUsername("Symfox");
     bot.user.setPresence(
@@ -225,7 +225,39 @@ bot.on('message', function(message)
             
       case "kremsajt": 
         message.channel.send("KRÉMSAJT, olyan finom ez a KRÉMSAJT", {files: [{attachment: 'http://vacsinalam.cafeblog.hu/files/2014/06/cserpes-natur-kremsajt.jpg' }]} );
-        break;    
+        break;
+            
+      case "ban": //Not much but, it's in testing phase, probably won't work, I just changed the ''KICK'' to ''BAN''.
+            
+        if(!(args[1] && args[2])) return;
+
+        var member = message.mentions.members.first();
+        var reason = message.content.substring(PREFIX.length + args[0].length + 1 + args[1].length);
+
+        if(message.member.hasPermission("BAN_MEMBERS"))
+        {
+          if(message.guild.me.hasPermission("BAN_MEMBERS"))
+          {
+            if(member !== undefined)
+            {
+              member.ban(reason);
+              message.channel.send(member + " has been banned because" + reason);
+            }
+            else
+            {
+              message.channel.send("The provided person to ban isn't valid");
+            }
+          }
+          else
+          {
+            message.channel.send("I don't have enough permission to ban someone, ask the guild's owner if you think this isn't normal");
+          }
+        }
+        else
+        {
+          message.reply("You don't have the permission to ban " + member);
+        }
+        break;
 
       default:
         message.channel.send("Invalid command! Please type `;;help` for the commands list!");
