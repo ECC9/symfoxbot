@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
        message.author.send("Here are all of the commands except the secret commands. To request new command(s) send mail to `galbence2002@gmail.com`");
        message.author.send("Want to invite me to your server? Say `;;symfox` then you get the invitation link :D");
        var embed = new RichEmbed()
-       .addField("Commands:", "```\n ;;symfox \n \n ;;secretcommands \n \n ;;hi \n \n ;;test \n \n ;;rekt \n \n ;;staff \n \n ;;error \n \n ;;inivte \n \n ;;afk \n \n ;;back \n \n ;;thx \n \n ;;cookie \n \n ;;yes \n \n ;;no \n \n ;;ok \n \n ;;what \n \n ;;pancake \n \n ;;lol \n \n ;;um \n \n ;;england \n \n ;;boneless \n \n ;;pphoenix \n \n ;;ephoenix \n \n ;;nphoenix \n \n ;;phoenix \n \n ;;noob \n \n ;;pff \n \n ;;potato \n \n ;;peanut \n \n More commands coming soon...```")
+       .addField("Commands:", "```\n ;;symfox \n \n ;;test \n \n ;;staff \n \n ;;invite \n \n ;;afk \n \n ;;back \n \n ;;m_cookie \n \n ;;m_what \n \n ;;m_pancake \n \n ;;lol \n \n ;;m_um \n \n ;;m_england \n \n ;;m_noob \n \n ;;m_pff \n \n ;;m_potato \n \n ;;m_peanut \n \n ;;m_rekt \n \n ;;b_hi \n \n ;;b_thx \n \n ;;b_yes \n \n ;;b_ok \n \n ;;b_no \n \n  More commands coming soon...```")
        .setColor(0xFC142B)
        .setFooter(`${client.ping}ms`)
        .setThumbnail(message.author.displayAvatarURL);
