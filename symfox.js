@@ -78,7 +78,7 @@ bot.on('message', function(message)
         message.reply("Hi :D");
         break;
 
-      case "test":
+      case "test": //Probably not work...
         message.channel.send('Testing...').then(sent => {
         sent.edit(`Test is OK. ${sent.createdTimestamp - message.createdTimestamp}ms`);
         });
