@@ -67,9 +67,9 @@ bot.on('message', function(message)
 
       case "info":
         var embed = new Discord.RichEmbed()
-        .addField("Information", "Version: `1.0.0 beta` ,\n Created by `@ECC9#6057` with help of `@ATZ#0831` \n \n `Email: galbence2002@gmail.com` .")
+        .addField("Information", "Version: `1.0.0 beta` ,\n Created by `ECC9#6057 , Gaiben#7736 , lpz#3218 and Anarchy#8213` \n \n `Email: galbence2002@gmail.com` .")
         .setColor(0xFC142B)
-        .setFooter("Under development... Email: galbence2002@gmail.com")
+        .setFooter("Email: galbence2002@gmail.com")
         .setThumbnail(message.author.displayAvatarURL)
         message.channel.sendEmbed(embed);
         break;
@@ -93,7 +93,7 @@ bot.on('message', function(message)
        var embed = new Discord.RichEmbed()
        .addField("Commands:", "```\n ;;symfox \n \n ;;secretcommands \n \n ;;hi \n \n ;;test \n \n ;;rekt \n \n ;;staff \n \n ;;error \n \n ;;inivte \n \n ;;afk \n \n ;;back \n \n ;;thx \n \n ;;cookie \n \n ;;yes \n \n ;;no \n \n ;;ok \n \n ;;what \n \n ;;pancake \n \n ;;lol \n \n ;;um \n \n ;;england \n \n ;;boneless \n \n ;;pphoenix \n \n ;;ephoenix \n \n ;;nphoenix \n \n ;;phoenix \n \n ;;noob \n \n ;;pff \n \n ;;potato \n \n ;;peanut \n \n More commands coming soon...```")
        .setColor(0xFC142B)
-       .setFooter("Under development... Email: galbence2002@gmail.com")
+       .setFooter("Email: galbence2002@gmail.com")
        .setThumbnail(message.author.displayAvatarURL);
        message.author.send({embed});
        message.author.send("Join our chat: https://discord.gg/MqQEnRu");
@@ -101,7 +101,7 @@ bot.on('message', function(message)
 
       case "staff":
         var embed = new Discord.RichEmbed()
-        .addField("Staff Team:", "\n | Main Owner: ECC9 \n | Co-Owners: -none- \n | Administrators: -none- \n | Head Moderators: GNSPHIL \n | Moderators: ATZ1 , kevzter15 , JTG24 \n | Trial Moderators: <none> \n \n `Owner email: galbence2002@gmail.com`")
+        .addField("Staff Team:", "\n  \n - in developement - \n \n `Owner email: galbence2002@gmail.com`")
         .setColor(0xFC142B)
         .setThumbnail(message.author.displayAvatarURL);
         message.channel.sendEmbed(embed);
@@ -224,7 +224,7 @@ bot.on('message', function(message)
         break;
 
       default:
-        message.channel.send("Invalid command! Please type `;;help` for the commands list! [ Under development... ]");
+        message.channel.send("Invalid command! Please type `;;help` for the commands list!");
         break;
     }
 });
