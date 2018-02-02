@@ -1,2 +1,2 @@
 # Symfox Bot
-Bot by ECC9
+This Discord bot is a multifunctionally bot witch is still in developement.
