@@ -1,4 +1,4 @@
 exports.run = (client, message, args) => { 
-  message.channel.send("You are now in `AFK` mode.");
-  message.member.addRole("353620798197727234");
+  message.channel.send("I set you AFK!");
+  message.member.addRole("role_id");
 }
