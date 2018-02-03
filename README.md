@@ -8,5 +8,5 @@ Commands: Type ;;help for a list of commands
 - Moderation
 - Fun
 - Games
-- Music
+- Music ( not sure )
 - AI
