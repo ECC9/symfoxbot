@@ -4,7 +4,7 @@ exports.run = async (client, message, args) => {
     color: 3447003,
     fields: [{
         name: ":octagonal_sign: First of all, permissions.\n",
-        value: "\n\nYou don't have enough permissions. You need `Staff` role."
+        value: "\n\nYou don't have permissions. You need `Staff` role."
     }
     ],
     timestamp: new Date(),
