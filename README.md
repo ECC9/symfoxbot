@@ -4,7 +4,9 @@ Join our development server at https://discord.gg/VASkdYq
 # Features:
 Commands: Type ;;help for a list of commands
 # Planned Features:
-- AI
+- Website
 - Moderation
 - Fun
 - Games
+- Music
+- AI
