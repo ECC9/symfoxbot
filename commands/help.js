@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
        var embed = new RichEmbed()
        .addField("Commands: ( hi )", "```\n ;;symfox \n \n ;;test \n \n ;;staff \n \n ;;invite \n \n ;;afk \n \n ;;back \n \n ;;cookie \n \n ;;what \n \n ;;pancake \n \n ;;lol \n \n ;;um \n \n ;;england \n \n ;;noob \n \n ;;pff \n \n ;;potato \n \n ;;peanut \n \n ;;rekt \n \n ;;hi \n \n ;;thx \n \n ;;yes \n \n ;;ok \n \n ;;no \n \n  More commands coming soon...```")
        .setColor(0xFC142B)
-       .setFooter(`${client.ping}ms`)
+       .setFooter(`${Math.round(client.ping)}ms`)
        .setThumbnail(message.author.displayAvatarURL);
        message.author.send({embed});
        message.author.send("Join our chat: https://discord.gg/GxCSx4w");
