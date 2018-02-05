@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: `${client.ping} ms`
+      text: `${Math.round(client.ping)}ms`
     }
 
 }});
