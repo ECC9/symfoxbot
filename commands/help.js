@@ -9,5 +9,5 @@ exports.run = async (client, message, args) => {
        .setFooter(`${client.ping}ms`)
        .setThumbnail(message.author.displayAvatarURL);
        message.author.send({embed});
-       message.author.send("Join our chat: https://discord.gg/MqQEnRu");
+       message.author.send("Join our chat: https://discord.gg/GxCSx4w");
 }
