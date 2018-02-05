@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
         message.author.send("Here are all of the secret commands. To request command(s), send email to `galbence2002@gmail.com`");
 
         var embed = new RichEmbed()
-        .addField("Secret Commands:", "```\n ;;gay \n \n ;;hahg \n \n More commands coming soon...```")
+        .addField("Secret Commands:", "```\n ;;rip ( use at your own risk ) \n ;;gay \n \n ;;hahg \n \n More commands coming soon...```")
         .setColor(0xFC142B)
         .setThumbnail(message.author.displayAvatarURL);
 
