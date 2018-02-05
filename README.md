@@ -9,4 +9,3 @@ Commands: Type ;;help for a list of commands
 - Games
 - Music
 - AI
-lolololololololol
