@@ -24,4 +24,4 @@ client.on("message", message => {
   }
 });
 
-client.login(config.token);
+client.login("bot token here");
