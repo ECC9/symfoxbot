@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
       color: 3447003,
       fields: [{
           name: ":ping_pong: Pong!\n",
-          value: `${Math.round(client.ping)} ms`
+          value: `${Math.round(client.ping)}ms`
       }
       ],
       timestamp: new Date(),
