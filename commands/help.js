@@ -1,5 +1,5 @@
 const { RichEmbed } = require("discord.js");
-exports.run = async (client, message, args) => { 
+exports.run = (client, message, args) => {
   message.channel.send("Check your DMs! You got a DM from me. :mailbox:");
        message.author.send("Here are all of the commands except the secret commands. To request new command(s) send mail to `galbence2002@gmail.com`");
        message.author.send("Want to invite me to your server? Say `;;symfox` then you get the invitation link :D");
