@@ -1,10 +1,15 @@
-/*
-  Ping. Edits the message to "Pong!" to check if the bot is online.
-*/
 exports.run = (client, message, args) => { 
-  self.registerCommand('ping', function (msg, args) {
-    this.self.createMessage(msg.channel.id, 'Pong!').then(m => this.edit(m, `${m.content} (${m.timestamp - msg.timestamp}ms)`))
-  }, {
-    aliases: ['pong']
-  })
+     message.channel.send({embed: {
+      color: 3447003,
+      fields: [{
+          name: ":ping_pong: Pong!\n",
+          value: `${Math.round(client.ping)}ms`
+      }
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: client.user.avatarURL,
+      }
+    }
+    });
 }
