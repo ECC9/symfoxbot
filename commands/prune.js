@@ -1,4 +1,4 @@
-module.exports = (self) => {
+exports.run = (client, message, args) => { 
   self.registerCommand('prune', function (msg, args) {
     // If no number is given
     if (!args[0] || !/\d{1,2}/ig.test(args[0])) return this.send(msg, 'Please specify the number of messages to delete.')
