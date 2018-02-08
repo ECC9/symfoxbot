@@ -23,5 +23,3 @@ client.on("message", message => {
     console.error(err);
   }
 });
-
-client.login("MzUzMTE3NzI2ODI0NDY0Mzk0.DV26MA.f4kAWXcQbYw4nvGHN7ErSB6AsFo");
