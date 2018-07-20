@@ -1,6 +1,5 @@
 exports.run = (client, message, args) => { 
-         module.exports = async (main, documents, msg, commandData) => {
-	const { Utils: { PromiseWait }, Constants: { Colors } } = main;
+const { Utils: { PromiseWait }, Constants: { Colors } } = main;
 	if (msg.suffix) {
 		// Deal with it™️
 		let randomWaitTimes = [1000, 1500, 3000, 2500, 2000, 1250, 500, 300, 100, 600];
